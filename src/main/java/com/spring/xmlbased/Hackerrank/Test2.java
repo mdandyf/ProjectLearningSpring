@@ -1,7 +1,5 @@
 package com.spring.xmlbased.Hackerrank;
 
-import com.google.gson.Gson;
-import com.google.gson.JsonArray;
 import jdk.nashorn.internal.parser.JSONParser;
 import org.json.JSONObject;
 import org.json.JSONString;
@@ -42,11 +40,7 @@ public class Test2 {
         }
 
         if(output != null) {
-           Gson gson = new Gson();
-           gson.toJson(output);
-
-            JsonArray retArr = new JsonArray();
-        }
+                   }
 
 
 
