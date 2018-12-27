@@ -1,0 +1,5 @@
+ALTER TABLE NonTeachingStaff DROP FOREIGN KEY FK_NonTeachingStaff_staff_id
+ALTER TABLE TeachingStaff DROP FOREIGN KEY FK_TeachingStaff_staff_id
+DROP TABLE Staff
+DROP TABLE NonTeachingStaff
+DROP TABLE TeachingStaff

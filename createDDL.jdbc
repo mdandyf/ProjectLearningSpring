@@ -1,0 +1,5 @@
+CREATE TABLE Staff (staff_id INTEGER AUTO_INCREMENT NOT NULL, DTYPE VARCHAR(31), staff_name VARCHAR(255), created_at DATETIME NOT NULL, updated_at DATETIME NOT NULL, PRIMARY KEY (staff_id))
+CREATE TABLE NonTeachingStaff (staff_id INTEGER NOT NULL, staff_area_expertise VARCHAR(255), PRIMARY KEY (staff_id))
+CREATE TABLE TeachingStaff (staff_id INTEGER NOT NULL, staff_qualification VARCHAR(255), staff_subject_expertise VARCHAR(255), PRIMARY KEY (staff_id))
+ALTER TABLE NonTeachingStaff ADD CONSTRAINT FK_NonTeachingStaff_staff_id FOREIGN KEY (staff_id) REFERENCES Staff (staff_id)
+ALTER TABLE TeachingStaff ADD CONSTRAINT FK_TeachingStaff_staff_id FOREIGN KEY (staff_id) REFERENCES Staff (staff_id)

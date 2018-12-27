@@ -1,6 +1,6 @@
-package com.spring.javabased.configuration.jpa.entity;
+package com.spring.javabased.jpa.entity;
 
-import com.spring.javabased.configuration.jpa.configuration.ColumnPosition;
+import com.spring.javabased.jpa.configuration.ColumnPosition;
 
 import javax.persistence.*;
 import java.io.Serializable;
